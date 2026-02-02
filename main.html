@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Krishna — Data Analyst Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header style="padding:18px 24px;background:#fff;border-bottom:1px solid #e6eef7">
+    <div style="max-width:980px;margin:0 auto;display:flex;justify-content:space-between;align-items:center">
+      <h1 style="margin:0;font-size:20px">Krishna — Data Analyst</h1>
+      <nav><a href="#projects">Projects</a> · <a href="#contact">Contact</a></nav>
+    </div>
+  </header>
+
+  <main style="max-width:980px;margin:28px auto;padding:0 24px">
+    <section id="about" style="background:#fff;padding:18px;border-radius:8px;border:1px solid #eef4ff">
+      <h2>About</h2>
+      <p>Hi — I analyse data, build dashboards, and create predictive models using Python, SQL, and visualization tools.</p>
+    </section>
+
+    <section id="projects" style="margin-top:18px">
+      <h2>Selected Projects</h2>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:12px">
+        <article style="background:#fff;padding:12px;border-radius:8px;border:1px solid #eef4ff">
+          <h3>Sales Dashboard</h3>
+          <p>Interactive dashboard with KPIs and trends. Tools: SQL, PowerBI.</p>
+        </article>
+
+        <article style="background:#fff;padding:12px;border-radius:8px;border:1px solid #eef4ff">
+          <h3>Churn Prediction</h3>
+          <p>Predictive model to identify at-risk customers. Tools: Python, scikit-learn.</p>
+        </article>
+
+        <article style="background:#fff;padding:12px;border-radius:8px;border:1px solid #eef4ff">
+          <h3>Web Traffic Analysis</h3>
+          <p>Analyzed site traffic & A/B tests to improve conversions. Tools: SQL, Google Analytics.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:18px;background:#fff;padding:12px;border-radius:8px;border:1px solid #eef4ff">
+      <h2>Contact</h2>
+      <p>Email: your-email@example.com</p>
+      <p>GitHub: <a href="https://github.com/krishnadata">krishnadata</a></p>
+    </section>
+  </main>
+
+  <footer style="text-align:center;padding:18px;color:#6b7a90;border-top:1px solid #e6eef7;margin-top:28px">
+    © <span id="year"></span> Krishna
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

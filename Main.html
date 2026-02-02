@@ -1,20 +1,77 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>Krishna's Data Analyst Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Krishna — Data Analyst Portfolio</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <h1>Welcome to My Portfolio</h1>
-  <p>Certified Power BI Data Analyst | SQL | Finance & Operations</p>
-  
-  <h2>Projects</h2>
-  <ul>
-    <li>Financial KPI Dashboard (Power BI)</li>
-    <li>Sales Performance Analysis (SQL + Power BI)</li>
-    <li>Customer Segmentation Report</li>
-  </ul>
-  
-  <h2>Contact</h2>
-  <p>LinkedIn: <a href="https://linkedin.com/in/YOUR-LINK">My Profile</a></p>
+  <header class="site-header">
+    <div class="wrap">
+      <h1 class="site-title">Krishna — Data Analyst</h1>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="hero" class="hero">
+      <h2>Turning data into insights</h2>
+      <p>I build dashboards, run analyses, and deliver actionable insights using Python, SQL, and visualization tools.</p>
+      <a class="cta" href="#projects">See my projects</a>
+    </section>
+
+    <section id="about" class="card">
+      <h3>About me</h3>
+      <p>Short intro about your background, tools you use (Python, Pandas, SQL, Tableau/PowerBI), and the types of problems you solve.</p>
+    </section>
+
+    <section id="projects" class="card">
+      <h3>Selected Projects</h3>
+      <div class="grid">
+        <article class="project">
+          <h4>Sales Dashboard</h4>
+          <p>Interactive dashboard showing sales KPIs, cohort analysis, and trends. Built with PowerBI and PostgreSQL.</p>
+          <p class="tags">SQL · PowerBI · Dashboarding</p>
+          <p><a href="#" target="_blank">View details</a></p>
+        </article>
+
+        <article class="project">
+          <h4>Customer Churn Model</h4>
+          <p>Predictive model to identify churn risk; reduced churn by targeting at-risk customers with targeted campaigns.</p>
+          <p class="tags">Python · scikit-learn · Feature engineering</p>
+          <p><a href="#" target="_blank">View code / report</a></p>
+        </article>
+
+        <article class="project">
+          <h4>Web Traffic Analysis</h4>
+          <p>Analyzed user behavior and uplift from A/B tests; recommended site changes leading to better conversion rates.</p>
+          <p class="tags">SQL · Google Analytics · A/B testing</p>
+          <p><a href="#" target="_blank">Read case study</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h3>Contact</h3>
+      <p>Email: your-email@example.com</p>
+      <p>LinkedIn: <a href="#" target="_blank">your-profile</a> · GitHub: <a href="https://github.com/krishnadata" target="_blank">krishnadata</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>© <span id="year"></span> Krishna — Data Analyst</small>
+    </div>
+  </footer>
+
+  <script>
+    // small script to set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
